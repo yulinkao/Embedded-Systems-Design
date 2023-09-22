@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp3/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/button_debounce.vhd(4): </Dynamic>
+            <Dynamic>button_debounce</Dynamic>
+            <Navigation>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/button_debounce.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/button_debounce.vhd(15): </Dynamic>
+            <Dynamic>button_debounce_arch</Dynamic>
+            <Navigation>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/button_debounce.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/main.vhd(4): </Dynamic>
+            <Dynamic>main</Dynamic>
+            <Navigation>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/main.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/main.vhd(14): </Dynamic>
+            <Dynamic>main_arch</Dynamic>
+            <Navigation>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/main.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/traffic_lights.vhd(4): </Dynamic>
+            <Dynamic>traffic_lights</Dynamic>
+            <Navigation>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/traffic_lights.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/traffic_lights.vhd(14): </Dynamic>
+            <Dynamic>traffic_lights_arch</Dynamic>
+            <Navigation>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/traffic_lights.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/main.vhd(12): </Dynamic>
+            <Dynamic>main</Dynamic>
+            <Dynamic>main_arch</Dynamic>
+            <Navigation>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/main.vhd</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/traffic_lights.vhd(140): </Dynamic>
+            <Dynamic>\u2/seg1_i1</Dynamic>
+            <Navigation>//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp3/impl1/source/traffic_lights.vhd</Navigation>
+            <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_in_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk_in</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

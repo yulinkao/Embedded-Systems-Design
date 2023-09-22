@@ -1,0 +1,79 @@
+Loading design for application iotiming from file exp3_impl1.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file exp3_impl1.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file exp3_impl1.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: main
+// Package: CSBGA132
+// ncd File: exp3_impl1.ncd
+// Version: Diamond (64-bit) 3.10.0.111.2
+// Written on Thu May 09 01:28:28 2019
+// M: Minimum Performance Grade
+// iotiming exp3_impl1.ncd exp3_impl1.prf -gui -msgset //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp3/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port    Clock  Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+button1 clk_in R     0.829      4       0.418     6
+button2 clk_in R     1.102      4       0.245     6
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)
+
+
+// Internal_Clock to Output
+
+Port    Internal_Clock
+--------------------------------------------------------
+led1[0] s_clk         
+led1[1] s_clk         
+led1[2] s_clk         
+led2[0] s_clk         
+led2[1] s_clk         
+led2[2] s_clk         
+seg1[0] s_clk         
+seg1[1] s_clk         
+seg1[2] s_clk         
+seg1[3] s_clk         
+seg1[4] s_clk         
+seg1[5] s_clk         
+seg1[6] s_clk         
+seg2[0] s_clk         
+seg2[1] s_clk         
+seg2[2] s_clk         
+seg2[3] s_clk         
+seg2[4] s_clk         
+seg2[5] s_clk         
+seg2[6] s_clk         
+WARNING: you must also run trce with hold speed: 6

@@ -1,0 +1,32 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      91.00        100.0
+                                  LUT4	     135.00        100.0
+                                 IOBUF	         27        100.0
+                                PFUREG	         72        100.0
+                                RIPPLE	         23        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        traffic_lights	          1        78.0
+                       button_debounce	          1        20.5
+---------------------------------------------------
+Report for cell traffic_lights
+   Instance path: main/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      71.00        78.0
+                                  LUT4	     122.00        90.4
+                                PFUREG	         44        61.1
+                                RIPPLE	          9        39.1
+---------------------------------------------------
+Report for cell button_debounce
+   Instance path: main/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.67        20.5
+                                  LUT4	      10.00         7.4
+                                PFUREG	         28        38.9
+                                RIPPLE	         14        60.9

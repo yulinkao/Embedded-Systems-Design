@@ -1,0 +1,14 @@
+#Start recording tcl command: 5/8/2019 15:22:20
+#Project Location: //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp3; Project name: exp3
+prj_project new -name "exp3" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+file copy -force -- "//Mac/Home/Desktop/vhdl_BASIC/exp/exp3/button_debounce.vhd" "//Mac/Home/Desktop/vhdl_BASIC/exp/exp3/main.vhd" "//Mac/Home/Desktop/vhdl_BASIC/exp/exp3/traffic_lights.vhd" "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp3/impl1/source"
+prj_src add "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp3/impl1/source/button_debounce.vhd" "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp3/impl1/source/main.vhd" "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp3/impl1/source/traffic_lights.vhd"
+prj_project save
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_src add "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp3/testbench3/testbench3.spf"
+prj_project save
+prj_project close
+#Stop recording: 5/8/2019 15:33:30

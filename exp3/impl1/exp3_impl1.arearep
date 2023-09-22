@@ -1,0 +1,47 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  72 of 4635 (1.553%)
+I/O cells:      27
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        23          100.0
+                            FD1P3AX         9          100.0
+                            FD1P3IX        11          100.0
+                            FD1P3JX         2          100.0
+                            FD1S3AX         3          100.0
+                            FD1S3IX        47          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                            L6MUX21         1          100.0
+                               LUT4       132          100.0
+                                 OB        24          100.0
+                              PFUMX        13          100.0
+SUB MODULES
+                    button_debounce         1
+                     traffic_lights         1
+                              TOTAL       271
+----------------------------------------------------------------------
+Report for cell traffic_lights.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           39.1
+                            FD1P3AX         6           66.7
+                            FD1P3IX        11          100.0
+                            FD1P3JX         2          100.0
+                            FD1S3AX         3          100.0
+                            FD1S3IX        22           46.8
+                            L6MUX21         1          100.0
+                               LUT4       120           90.9
+                              PFUMX        13          100.0
+                              TOTAL       187
+----------------------------------------------------------------------
+Report for cell button_debounce.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        14           60.9
+                            FD1P3AX         3           33.3
+                            FD1S3IX        25           53.2
+                               LUT4        11            8.3
+                              TOTAL        53
