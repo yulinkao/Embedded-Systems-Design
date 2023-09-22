@@ -1,0 +1,9 @@
+#Start recording tcl command: 5/9/2019 17:47:43
+#Project Location: //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2; Project name: exp2
+prj_project open "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/exp2.ldf"
+pgr_project open "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/impl1/impl1.xcf"
+prj_run Export -impl impl1
+pgr_project save "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/impl1/impl1.xcf"
+prj_project save
+prj_project close
+#Stop recording: 5/9/2019 20:39:00

@@ -1,0 +1,43 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  126 of 4635 (2.718%)
+I/O cells:      13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        82          100.0
+                            FD1P3AX         7          100.0
+                            FD1P3IX        22          100.0
+                            FD1S3AX        37          100.0
+                            FD1S3IX        60          100.0
+                                GSR         1          100.0
+                                 IB         5          100.0
+                               LUT4        91          100.0
+                                 OB         8          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+                           huxideng         1
+                            xiaodou         1
+                              TOTAL       317
+----------------------------------------------------------------------
+Report for cell huxideng.v1
+Instance Path : A2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        72           87.8
+                            FD1P3AX         2           28.6
+                            FD1P3IX        22          100.0
+                            FD1S3AX        37          100.0
+                            FD1S3IX        38           63.3
+                               LUT4        70           76.9
+                              PFUMX         1           50.0
+                              TOTAL       242
+----------------------------------------------------------------------
+Report for cell xiaodou.v1
+Instance Path : A1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        10           12.2
+                            FD1P3AX         5           71.4
+                            FD1S3IX        22           36.7
+                               LUT4        16           17.6
+                              TOTAL        53

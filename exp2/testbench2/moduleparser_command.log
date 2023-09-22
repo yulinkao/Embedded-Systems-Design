@@ -1,0 +1,1 @@
+C:/Program Files/diamond/3.10_x64/bin/nt64/moduleparser.exe -PROJ testbench2 -pf C:/Program Files/diamond/3.10_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg C:/Program Files/diamond/3.10_x64/cae_library/vhdl_packages/vdbs -lst //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/testbench2/source_files.lst

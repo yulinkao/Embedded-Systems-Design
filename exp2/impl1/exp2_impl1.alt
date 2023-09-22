@@ -1,0 +1,21 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu May 09 20:33:07 2019 *
+NOTE DESIGN NAME: main *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS fled8[6] : N9 : out *
+NOTE PINS fled8[5] : N10 : out *
+NOTE PINS fled8[7] : P9 : out *
+NOTE PINS fled8[4] : P11 : out *
+NOTE PINS fled8[3] : M11 : out *
+NOTE PINS fled8[2] : P12 : out *
+NOTE PINS fled8[1] : M12 : out *
+NOTE PINS fled8[0] : N13 : out *
+NOTE PINS fclock : C1 : in *
+NOTE PINS fkey_menu : M13 : in *
+NOTE PINS fkey_reset : M14 : in *
+NOTE PINS fkey_up : N14 : in *
+NOTE PINS fkey_down : L14 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

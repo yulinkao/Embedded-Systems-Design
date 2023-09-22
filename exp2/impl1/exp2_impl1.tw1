@@ -1,0 +1,414 @@
+
+Loading design for application trce from file exp2_impl1_map.ncd.
+Design name: main
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Wed May 08 19:59:41 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o exp2_impl1.tw1 -gui -msgset //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/promote.xml exp2_impl1_map.ncd exp2_impl1.prf 
+Design file:     exp2_impl1_map.ncd
+Preference file: exp2_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "n_n_clock" 58.011000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 18.316ns (weighted slack = -677.692ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              A1/out_key_up_27  (from fclock_c +)
+   Destination:    FF         Data in        A2/changeRange__i19  (to n_n_clock +)
+
+   Delay:              18.616ns  (48.4% logic, 51.6% route), 19 logic levels.
+
+ Constraint Details:
+
+     18.616ns physical path delay SLICE_116 to A2/SLICE_53 exceeds
+      (delay constraint based on source clock period of 4.193ns and destination clock period of 17.238ns)
+      0.466ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 0.300ns) by 18.316ns
+
+ Physical Path Details:
+
+      Data path SLICE_116 to A2/SLICE_53:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452  SLICE_116.CLK to   SLICE_116.Q0 SLICE_116 (from fclock_c)
+ROUTE         3   e 1.234   SLICE_116.Q0 to */SLICE_123.A0 n_n_key_up
+CTOF_DEL    ---     0.495 */SLICE_123.A0 to */SLICE_123.F0 A2/SLICE_123
+ROUTE        13   e 1.234 */SLICE_123.F0 to  A2/SLICE_7.A1 n1757
+C1TOFCO_DE  ---     0.889  A2/SLICE_7.A1 to A2/SLICE_7.FCO A2/SLICE_7
+ROUTE         1   e 0.001 A2/SLICE_7.FCO to A2/SLICE_6.FCI A2/n1477
+FCITOFCO_D  ---     0.162 A2/SLICE_6.FCI to A2/SLICE_6.FCO A2/SLICE_6
+ROUTE         1   e 0.001 A2/SLICE_6.FCO to A2/SLICE_5.FCI A2/n1478
+FCITOF0_DE  ---     0.585 A2/SLICE_5.FCI to  A2/SLICE_5.F0 A2/SLICE_5
+ROUTE         2   e 1.234  A2/SLICE_5.F0 to */SLICE_126.B1 A2/key_down_flag_N_271_8
+CTOF_DEL    ---     0.495 */SLICE_126.B1 to */SLICE_126.F1 A2/SLICE_126
+ROUTE         1   e 0.480 */SLICE_126.F1 to */SLICE_126.D0 A2/n18_adj_294
+CTOF_DEL    ---     0.495 */SLICE_126.D0 to */SLICE_126.F0 A2/SLICE_126
+ROUTE         1   e 1.234 */SLICE_126.F0 to */SLICE_125.C1 A2/n7
+CTOF_DEL    ---     0.495 */SLICE_125.C1 to */SLICE_125.F1 A2/SLICE_125
+ROUTE         2   e 1.234 */SLICE_125.F1 to */SLICE_122.A1 A2/n1550
+CTOF_DEL    ---     0.495 */SLICE_122.A1 to */SLICE_122.F1 A2/SLICE_122
+ROUTE         3   e 0.480 */SLICE_122.F1 to */SLICE_122.C0 A2/key_down_flag_N_270
+CTOF_DEL    ---     0.495 */SLICE_122.C0 to */SLICE_122.F0 A2/SLICE_122
+ROUTE        21   e 1.234 */SLICE_122.F0 to A2/SLICE_52.D1 A2/key_down_flag_N_269
+C1TOFCO_DE  ---     0.889 A2/SLICE_52.D1 to */SLICE_52.FCO A2/SLICE_52
+ROUTE         1   e 0.001 */SLICE_52.FCO to */SLICE_51.FCI A2/n1516
+FCITOFCO_D  ---     0.162 */SLICE_51.FCI to */SLICE_51.FCO A2/SLICE_51
+ROUTE         1   e 0.001 */SLICE_51.FCO to */SLICE_50.FCI A2/n1517
+FCITOFCO_D  ---     0.162 */SLICE_50.FCI to */SLICE_50.FCO A2/SLICE_50
+ROUTE         1   e 0.001 */SLICE_50.FCO to */SLICE_41.FCI A2/n1518
+FCITOFCO_D  ---     0.162 */SLICE_41.FCI to */SLICE_41.FCO A2/SLICE_41
+ROUTE         1   e 0.001 */SLICE_41.FCO to */SLICE_40.FCI A2/n1519
+FCITOFCO_D  ---     0.162 */SLICE_40.FCI to */SLICE_40.FCO A2/SLICE_40
+ROUTE         1   e 0.001 */SLICE_40.FCO to */SLICE_39.FCI A2/n1520
+FCITOFCO_D  ---     0.162 */SLICE_39.FCI to */SLICE_39.FCO A2/SLICE_39
+ROUTE         1   e 0.001 */SLICE_39.FCO to */SLICE_38.FCI A2/n1521
+FCITOF1_DE  ---     0.643 */SLICE_38.FCI to A2/SLICE_38.F1 A2/SLICE_38
+ROUTE         1   e 1.234 A2/SLICE_38.F1 to A2/SLICE_54.C0 A2/n617
+C0TOFCO_DE  ---     1.023 A2/SLICE_54.C0 to */SLICE_54.FCO A2/SLICE_54
+ROUTE         1   e 0.001 */SLICE_54.FCO to */SLICE_53.FCI A2/n1515
+FCITOF0_DE  ---     0.585 */SLICE_53.FCI to A2/SLICE_53.F0 A2/SLICE_53
+ROUTE         1   e 0.001 A2/SLICE_53.F0 to */SLICE_53.DI0 A2/n600 (to n_n_clock)
+                  --------
+                   18.616   (48.4% logic, 51.6% route), 19 logic levels.
+
+Warning:   1.439MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "fclock_c" 238.493000 MHz ;
+            449 items scored, 224 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 3.937ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              A1/clock_count_232__i3  (from fclock_c +)
+   Destination:    FF         Data in        A1/out_key_down_28  (to fclock_c +)
+
+   Delay:               7.848ns  (31.0% logic, 69.0% route), 5 logic levels.
+
+ Constraint Details:
+
+      7.848ns physical path delay A1/SLICE_73 to A1/SLICE_113 exceeds
+      4.193ns delay constraint less
+      0.282ns CE_SET requirement (totaling 3.911ns) by 3.937ns
+
+ Physical Path Details:
+
+      Data path A1/SLICE_73 to A1/SLICE_113:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 */SLICE_73.CLK to A1/SLICE_73.Q0 A1/SLICE_73 (from fclock_c)
+ROUTE         2   e 1.234 A1/SLICE_73.Q0 to */SLICE_113.C1 A1/clock_count_3
+CTOF_DEL    ---     0.495 */SLICE_113.C1 to */SLICE_113.F1 A1/SLICE_113
+ROUTE         1   e 1.234 */SLICE_113.F1 to */SLICE_129.C1 A1/n1649
+CTOF_DEL    ---     0.495 */SLICE_129.C1 to */SLICE_129.F1 A1/SLICE_129
+ROUTE         1   e 0.480 */SLICE_129.F1 to */SLICE_129.C0 A1/n12
+CTOF_DEL    ---     0.495 */SLICE_129.C0 to */SLICE_129.F0 A1/SLICE_129
+ROUTE         1   e 1.234 */SLICE_129.F0 to */SLICE_128.A0 A1/n1636
+CTOF_DEL    ---     0.495 */SLICE_128.A0 to */SLICE_128.F0 A1/SLICE_128
+ROUTE        14   e 1.234 */SLICE_128.F0 to */SLICE_113.CE A1/clock_count_17__N_41 (to fclock_c)
+                  --------
+                    7.848   (31.0% logic, 69.0% route), 5 logic levels.
+
+Warning: 123.001MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "n_n_clock" 58.011000 MHz |             |             |
+;                                       |   58.011 MHz|    1.439 MHz|  19 *
+                                        |             |             |
+FREQUENCY NET "fclock_c" 238.493000 MHz |             |             |
+;                                       |  238.493 MHz|  123.001 MHz|   5 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+2 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+A2/n1550                                |       2|    4096|     94.81%
+                                        |        |        |
+n_n_key_up                              |       3|    4096|     94.81%
+                                        |        |        |
+A2/key_down_flag_N_270                  |       3|    4096|     94.81%
+                                        |        |        |
+A2/key_down_flag_N_269                  |      21|    4096|     94.81%
+                                        |        |        |
+n1757                                   |      13|    4096|     94.81%
+                                        |        |        |
+A2/n1513                                |       1|    2582|     59.77%
+                                        |        |        |
+A2/n1478                                |       1|    2548|     58.98%
+                                        |        |        |
+A2/n1517                                |       1|    2536|     58.70%
+                                        |        |        |
+A2/n1518                                |       1|    2500|     57.87%
+                                        |        |        |
+A2/n1479                                |       1|    2380|     55.09%
+                                        |        |        |
+A2/n7                                   |       1|    2261|     52.34%
+                                        |        |        |
+A2/n1514                                |       1|    2242|     51.90%
+                                        |        |        |
+A2/n1512                                |       1|    2232|     51.67%
+                                        |        |        |
+A2/n1519                                |       1|    2068|     47.87%
+                                        |        |        |
+A2/n1480                                |       1|    2000|     46.30%
+                                        |        |        |
+A2/n1477                                |       1|    1898|     43.94%
+                                        |        |        |
+A2/n8_adj_293                           |       1|    1835|     42.48%
+                                        |        |        |
+A2/n1516                                |       1|    1780|     41.20%
+                                        |        |        |
+A2/n1511                                |       1|    1513|     35.02%
+                                        |        |        |
+A2/n1520                                |       1|    1183|     27.38%
+                                        |        |        |
+A2/n18_adj_294                          |       1|    1079|     24.98%
+                                        |        |        |
+A2/n600                                 |       1|    1014|     23.47%
+                                        |        |        |
+A2/n1515                                |       1|    1001|     23.17%
+                                        |        |        |
+A2/n1510                                |       1|     786|     18.19%
+                                        |        |        |
+A2/n601                                 |       1|     782|     18.10%
+                                        |        |        |
+A2/key_down_flag_N_271_14               |       2|     737|     17.06%
+                                        |        |        |
+A2/n1481                                |       1|     737|     17.06%
+                                        |        |        |
+A2/n602                                 |       1|     703|     16.27%
+                                        |        |        |
+A2/key_down_flag_N_271_13               |       2|     673|     15.58%
+                                        |        |        |
+A2/key_down_flag_N_271_12               |       2|     590|     13.66%
+                                        |        |        |
+A2/n1521                                |       1|     532|     12.31%
+                                        |        |        |
+A2/key_down_flag_N_271_8                |       2|     519|     12.01%
+                                        |        |        |
+A2/n603                                 |       1|     495|     11.46%
+                                        |        |        |
+A2/n622                                 |       1|     470|     10.88%
+                                        |        |        |
+A2/n624                                 |       1|     435|     10.07%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: fclock_c   Source: fclock.PAD   Loads: 17
+   Covered under: FREQUENCY NET "fclock_c" 238.493000 MHz ;
+
+Clock Domain: n_n_clock   Source: A1/SLICE_112.Q0   Loads: 59
+   Covered under: FREQUENCY NET "n_n_clock" 58.011000 MHz ;
+
+   Data transfers from:
+   Clock Domain: fclock_c   Source: fclock.PAD
+      Covered under: FREQUENCY NET "n_n_clock" 58.011000 MHz ;   Transfers: 4
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4320  Score: 2620305327
+Cumulative negative slack: 2620305327
+
+Constraints cover 873566 paths, 2 nets, and 839 connections (88.60% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Wed May 08 19:59:42 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o exp2_impl1.tw1 -gui -msgset //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/promote.xml exp2_impl1_map.ncd exp2_impl1.prf 
+Design file:     exp2_impl1_map.ncd
+Preference file: exp2_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "n_n_clock" 58.011000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              A2/ampl1__i16  (from n_n_clock +)
+   Destination:    FF         Data in        A2/ampl1__i16  (to n_n_clock +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay A2/SLICE_21 to A2/SLICE_21 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path A2/SLICE_21 to A2/SLICE_21:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_21.CLK to A2/SLICE_21.Q0 A2/SLICE_21 (from n_n_clock)
+ROUTE         1   e 0.199 A2/SLICE_21.Q0 to A2/SLICE_21.A0 A2/ampl1_16
+CTOF_DEL    ---     0.101 A2/SLICE_21.A0 to A2/SLICE_21.F0 A2/SLICE_21
+ROUTE         3   e 0.001 A2/SLICE_21.F0 to */SLICE_21.DI0 A2/n11 (to n_n_clock)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "fclock_c" 238.493000 MHz ;
+            449 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              A1/clock_count_232__i3  (from fclock_c +)
+   Destination:    FF         Data in        A1/clock_count_232__i3  (to fclock_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay A1/SLICE_73 to A1/SLICE_73 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path A1/SLICE_73 to A1/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_73.CLK to A1/SLICE_73.Q0 A1/SLICE_73 (from fclock_c)
+ROUTE         2   e 0.199 A1/SLICE_73.Q0 to A1/SLICE_73.A0 A1/clock_count_3
+CTOF_DEL    ---     0.101 A1/SLICE_73.A0 to A1/SLICE_73.F0 A1/SLICE_73
+ROUTE         1   e 0.001 A1/SLICE_73.F0 to */SLICE_73.DI0 A1/n92 (to fclock_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "n_n_clock" 58.011000 MHz |             |             |
+;                                       |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+FREQUENCY NET "fclock_c" 238.493000 MHz |             |             |
+;                                       |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: fclock_c   Source: fclock.PAD   Loads: 17
+   Covered under: FREQUENCY NET "fclock_c" 238.493000 MHz ;
+
+Clock Domain: n_n_clock   Source: A1/SLICE_112.Q0   Loads: 59
+   Covered under: FREQUENCY NET "n_n_clock" 58.011000 MHz ;
+
+   Data transfers from:
+   Clock Domain: fclock_c   Source: fclock.PAD
+      Covered under: FREQUENCY NET "n_n_clock" 58.011000 MHz ;   Transfers: 4
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 873566 paths, 2 nets, and 891 connections (94.09% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4320 (setup), 0 (hold)
+Score: 2620305327 (setup), 0 (hold)
+Cumulative negative slack: 2620305327 (2620305327+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,93 @@
+[ START MERGED ]
+n_n_clock_enable_1 n_n_key_down
+n_n_clock_enable_2 n_n_key_menu
+n_n_clock_enable_3 n_n_key_up
+A2/menu_1_N_243_1 A2/menu_1
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+A1/clock_count_232_add_4_19/S1
+A1/clock_count_232_add_4_19/CO
+A1/clock_count_232_add_4_1/S0
+A1/clock_count_232_add_4_1/CI
+A2/add_124_15/CO
+A2/add_498_1/S0
+A2/add_498_1/CI
+A2/add_498_cout/S1
+A2/add_498_cout/CO
+A2/add_231_rep_6_1/S1
+A2/add_231_rep_6_1/S0
+A2/add_231_rep_6_1/CI
+A2/add_231_rep_6_17/S1
+A2/add_231_rep_6_17/CO
+A2/add_231_rep_7_1/S0
+A2/add_231_rep_7_1/CI
+A2/add_120_1/S0
+A2/add_120_1/CI
+A2/add_231_rep_7_15/CO
+A2/add_120_21/CO
+A2/add_5_1/S0
+A2/add_5_1/CI
+A2/sub_132_add_2_2/S1
+A2/sub_132_add_2_2/S0
+A2/sub_132_add_2_2/CI
+A2/sub_132_add_2_6/S1
+A2/sub_132_add_2_6/S0
+A2/sub_132_add_2_8/S1
+A2/sub_132_add_2_8/S0
+A2/sub_132_add_2_10/S1
+A2/sub_132_add_2_10/S0
+A2/add_5_17/CO
+A2/sub_132_add_2_12/S1
+A2/sub_132_add_2_12/S0
+A2/sub_132_add_2_14/S1
+A2/sub_132_add_2_14/S0
+A2/sub_132_add_2_16/S1
+A2/sub_132_add_2_16/S0
+A2/add_871_2/S1
+A2/add_871_2/S0
+A2/add_871_2/CI
+A2/add_871_4/S1
+A2/add_871_4/S0
+A2/add_871_6/S1
+A2/add_871_6/S0
+A2/add_871_8/S1
+A2/add_871_8/S0
+A2/add_871_10/S1
+A2/add_871_10/S0
+A2/add_871_12/S1
+A2/add_871_12/S0
+A2/sub_132_add_2_18/S1
+A2/sub_132_add_2_18/S0
+A2/add_871_14/S1
+A2/add_871_14/S0
+A2/sub_132_add_2_20/S0
+A2/sub_132_add_2_20/CO
+A2/add_124_1/S0
+A2/add_124_1/CI
+A2/add_871_cout/S1
+A2/add_871_cout/CO
+A2/sub_132_add_2_4/S1
+A2/sub_132_add_2_4/S0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Thu May 09 20:32:54 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "fled8[6]" SITE "N9" ;
+LOCATE COMP "fled8[5]" SITE "N10" ;
+LOCATE COMP "fled8[7]" SITE "P9" ;
+LOCATE COMP "fled8[4]" SITE "P11" ;
+LOCATE COMP "fled8[3]" SITE "M11" ;
+LOCATE COMP "fled8[2]" SITE "P12" ;
+LOCATE COMP "fled8[1]" SITE "M12" ;
+LOCATE COMP "fled8[0]" SITE "N13" ;
+LOCATE COMP "fclock" SITE "C1" ;
+LOCATE COMP "fkey_menu" SITE "M13" ;
+LOCATE COMP "fkey_reset" SITE "M14" ;
+LOCATE COMP "fkey_up" SITE "N14" ;
+LOCATE COMP "fkey_down" SITE "L14" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

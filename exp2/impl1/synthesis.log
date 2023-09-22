@@ -1,0 +1,224 @@
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Thu May 09 20:32:49 2019
+
+
+Command Line:  synthesis -f exp2_impl1_lattice.synproj -gui -msgset //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+The -top option is not used.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/impl1 (searchpath added)
+-p //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2 (searchpath added)
+VHDL library = work
+VHDL design file = //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/impl1/source/huxideng.vhd
+VHDL design file = //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/impl1/source/main.vhd
+VHDL design file = //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/impl1/source/xiaodou.vhd
+NGD file = exp2_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+WARNING - synthesis: Setting main as the top-level module. To specify the top-level module explicitly, use the -top option.
+INFO - synthesis: The default VHDL library search path is now "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp2/impl1". VHDL-1504
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/huxideng.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/huxideng.vhd(4): analyzing entity huxideng. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/huxideng.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd(4): analyzing entity main. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd(15): analyzing architecture behavioral. VHDL-1010
+WARNING - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd(15): overwriting existing secondary unit behavioral. VHDL-1178
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/xiaodou.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/xiaodou.vhd(4): analyzing entity xiaodou. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/xiaodou.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/huxideng.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/huxideng.vhd(4): analyzing entity huxideng. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/huxideng.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd(4): analyzing entity main. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd(15): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/xiaodou.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/xiaodou.vhd(4): analyzing entity xiaodou. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/xiaodou.vhd(17): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+unit main is not yet analyzed. VHDL-1485
+//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd(4): executing main(behavioral)
+
+WARNING - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/main.vhd(13): replacing existing netlist main(behavioral). VHDL-1205
+Top module name (VHDL): main
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = main.
+
+
+
+
+The number of registers created due to operator pipelining is 22.
+
+WARNING - synthesis: Bit 0 of Register \A2/led8_ret0 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \A2/change1_i12 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \A2/change1_i12 is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \A2/change1_i12 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \A2/change1_i12 is stuck at One
+WARNING - synthesis: Bit 4 of Register \A2/change1_i12 is stuck at One
+WARNING - synthesis: Bit 5 of Register \A2/change1_i12 is stuck at One
+WARNING - synthesis: Bit 6 of Register \A2/change1_i12 is stuck at One
+WARNING - synthesis: Bit 7 of Register \A2/change1_i12 is stuck at One
+WARNING - synthesis: Bit 8 of Register \A2/change1_i12 is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \A2/change1_i12 is stuck at One
+WARNING - synthesis: Bit 10 of Register \A2/change1_i12 is stuck at Zero
+WARNING - synthesis: Bit 11 of Register \A2/change1_i12 is stuck at Zero
+WARNING - synthesis: Bit 12 of Register \A2/change1_i12 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \A2/led8_ret1 is stuck at One
+WARNING - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/huxideng.vhd(135): Register \A2/menu_i0 is stuck at One. VDB-5014
+WARNING - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp2/impl1/source/huxideng.vhd(135): Register \A2/changeRange__i0 is stuck at Zero. VDB-5013
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file exp2_impl1.ngd.
+
+################### Begin Area Report (main)######################
+Number of register bits => 126 of 4635 (2 % )
+CCU2D => 82
+FD1P3AX => 7
+FD1P3IX => 22
+FD1S3AX => 37
+FD1S3IX => 60
+GSR => 1
+IB => 5
+LUT4 => 91
+OB => 8
+PFUMX => 2
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : A1/n_n_clock, loads : 99
+  Net : fclock_c, loads : 27
+Clock Enable Nets
+Number of Clock Enables: 10
+Top 10 highest fanout Clock Enables:
+  Net : A1/clock_count_17__N_41, loads : 22
+  Net : A2/menu_1, loads : 21
+  Net : A2/n_n_clock_enable_7, loads : 3
+  Net : A2/menu_1_N_243_1, loads : 2
+  Net : A2/n_n_clock_enable_5, loads : 1
+  Net : A2/n_n_clock_enable_4, loads : 1
+  Net : A1/fclock_c_enable_1, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : A2/n1753, loads : 33
+  Net : A2/n99, loads : 23
+  Net : A2/flag_1_N_142_1, loads : 23
+  Net : A2/n120, loads : 22
+  Net : A1/clock_count_17__N_41, loads : 22
+  Net : A2/menu_1, loads : 21
+  Net : A2/key_down_flag_N_269, loads : 21
+  Net : A2/n8, loads : 19
+  Net : A2/n38, loads : 19
+  Net : A2/n1060, loads : 16
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets n_n_clock]               |  200.000 MHz|   42.490 MHz|    22 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets fclock_c]                |  200.000 MHz|  116.891 MHz|     5 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 74.043  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.484  secs
+--------------------------------------------------------------

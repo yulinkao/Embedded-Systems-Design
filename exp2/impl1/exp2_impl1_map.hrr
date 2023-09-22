@@ -1,0 +1,32 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     129.00        100.0
+                                  LUT4	      90.00        100.0
+                                 IOBUF	         13        100.0
+                                PFUREG	        126        100.0
+                                RIPPLE	         82        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               xiaodou	          1        13.6
+                              huxideng	          1        84.9
+---------------------------------------------------
+Report for cell huxideng
+   Instance path: main/A2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     109.58        84.9
+                                  LUT4	      70.00        77.8
+                                PFUREG	         99        78.6
+                                RIPPLE	         72        87.8
+---------------------------------------------------
+Report for cell xiaodou
+   Instance path: main/A1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.50        13.6
+                                  LUT4	      13.00        14.4
+                                PFUREG	         27        21.4
+                                RIPPLE	         10        12.2
