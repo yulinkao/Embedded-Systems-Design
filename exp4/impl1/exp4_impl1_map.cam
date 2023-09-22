@@ -1,0 +1,86 @@
+[ START MERGED ]
+out_clock_foruse_enable_4 button1
+out_clock_foruse_enable_21 button4
+[ END MERGED ]
+[ START CLIPPED ]
+u2/add_30_1/S0
+u2/add_30_1/CI
+u2/add_30_17/CO
+u2/add_549_rep_40_1/S1
+u2/add_549_rep_40_1/S0
+u2/add_549_rep_40_1/CI
+u2/add_549_rep_40_3/S0
+u2/add_549_rep_40_7/CO
+u2/add_550_rep_42_1/S1
+u2/add_550_rep_42_1/S0
+u2/add_550_rep_42_1/CI
+u2/add_550_rep_42_3/S0
+u2/add_550_rep_42_7/CO
+u1/add_70_19/S1
+u1/add_70_19/CO
+u1/add_40_19/S1
+u1/add_40_19/CO
+u1/add_51_1/S0
+u1/add_51_1/CI
+u1/clock_count2_534_535_add_4_1/S0
+u1/clock_count2_534_535_add_4_1/CI
+u1/add_51_19/S1
+u1/add_51_19/CO
+u1/clock_count2_534_535_add_4_9/S1
+u1/clock_count2_534_535_add_4_9/CO
+u1/add_55_1/S0
+u1/add_55_1/CI
+u1/add_25_19/S1
+u1/add_25_19/CO
+u1/add_21_1/S0
+u1/add_21_1/CI
+u1/add_36_1/S0
+u1/add_36_1/CI
+u1/add_21_19/S1
+u1/add_21_19/CO
+u1/add_25_1/S0
+u1/add_25_1/CI
+u1/add_55_19/S1
+u1/add_55_19/CO
+u1/add_36_19/S1
+u1/add_36_19/CO
+u1/add_40_1/S0
+u1/add_40_1/CI
+u1/add_66_1/S0
+u1/add_66_1/CI
+u1/add_66_19/S1
+u1/add_66_19/CO
+u1/add_70_1/S0
+u1/add_70_1/CI
+u4/q_538_add_4_1/S0
+u4/q_538_add_4_1/CI
+u4/q_538_add_4_7/S1
+u4/q_538_add_4_7/CO
+u4/change_flag_536_add_4_1/S0
+u4/change_flag_536_add_4_1/CI
+u4/change_flag_536_add_4_7/S1
+u4/change_flag_536_add_4_7/CO
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Thu May 30 14:57:10 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "row4" SITE "P7" ;
+LOCATE COMP "row3" SITE "N7" ;
+LOCATE COMP "row2" SITE "P8" ;
+LOCATE COMP "SCK" SITE "J2" ;
+LOCATE COMP "row1" SITE "N8" ;
+LOCATE COMP "col4" SITE "N6" ;
+LOCATE COMP "col3" SITE "P6" ;
+LOCATE COMP "col2" SITE "N5" ;
+LOCATE COMP "col1" SITE "L3" ;
+LOCATE COMP "clock" SITE "C1" ;
+LOCATE COMP "led3" SITE "N9" ;
+LOCATE COMP "led2" SITE "P11" ;
+LOCATE COMP "led1" SITE "P12" ;
+LOCATE COMP "led0" SITE "N13" ;
+LOCATE COMP "SER" SITE "G3" ;
+LOCATE COMP "RCK" SITE "H3" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

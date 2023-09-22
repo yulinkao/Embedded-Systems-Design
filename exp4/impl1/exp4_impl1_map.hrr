@@ -1,0 +1,51 @@
+---------------------------------------------------
+Report for cell clock_top
+   Instance path: clock_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     376.00        100.0
+                                  LUT4	     527.00        100.0
+                                 IOBUF	         16        100.0
+                                PFUREG	        297        100.0
+                                RIPPLE	        110        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           clock_trans	          1         6.3
+                             clock_dis	          1        12.5
+                    clock_div_debounce	          1        28.7
+                             clock_ctr	          1        49.7
+---------------------------------------------------
+Report for cell clock_dis
+   Instance path: clock_top/u4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.00        12.5
+                                  LUT4	      79.00        15.0
+                                PFUREG	         22         7.4
+                                RIPPLE	          8         7.3
+---------------------------------------------------
+Report for cell clock_trans
+   Instance path: clock_top/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      23.83         6.3
+                                  LUT4	      36.00         6.8
+                                PFUREG	         42        14.1
+---------------------------------------------------
+Report for cell clock_div_debounce
+   Instance path: clock_top/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     108.00        28.7
+                                  LUT4	      49.00         9.3
+                                PFUREG	        157        52.9
+                                RIPPLE	         85        77.3
+---------------------------------------------------
+Report for cell clock_ctr
+   Instance path: clock_top/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     187.00        49.7
+                                  LUT4	     337.00        63.9
+                                PFUREG	         76        25.6
+                                RIPPLE	         17        15.5

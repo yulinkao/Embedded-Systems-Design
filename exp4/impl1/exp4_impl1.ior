@@ -1,0 +1,68 @@
+Loading design for application iotiming from file exp4_impl1.ncd.
+Design name: clock_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file exp4_impl1.ncd.
+Design name: clock_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file exp4_impl1.ncd.
+Design name: clock_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: clock_top
+// Package: CSBGA132
+// ncd File: exp4_impl1.ncd
+// Version: Diamond (64-bit) 3.10.0.111.2
+// Written on Wed May 08 15:40:00 2019
+// M: Minimum Performance Grade
+// iotiming exp4_impl1.ncd exp4_impl1.prf -gui
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+col1  clock R     5.320      4      -0.019     M
+col2  clock R     3.692      4       0.086     M
+col3  clock R     5.212      4       0.145     6
+col4  clock R     4.986      4       0.163     6
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)
+
+
+// Internal_Clock to Output
+
+Port  Internal_Clock  
+--------------------------------------------------------
+RCK   out_clock_foruse
+SCK   out_clock_foruse
+SER   out_clock_foruse
+led0  out_clock_foruse
+led1  out_clock_foruse
+led2  out_clock_foruse
+led3  out_clock_foruse
+WARNING: you must also run trce with hold speed: 6

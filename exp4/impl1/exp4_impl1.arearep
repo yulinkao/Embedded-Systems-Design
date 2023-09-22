@@ -1,0 +1,73 @@
+----------------------------------------------------------------------
+Report for cell clock_top.TECH
+Register bits:  297 of 4635 (6.408%)
+I/O cells:      16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       110          100.0
+                            FD1P3AX        10          100.0
+                            FD1P3IX       168          100.0
+                            FD1S3AX        43          100.0
+                            FD1S3AY        12          100.0
+                            FD1S3IX        40          100.0
+                            FD1S3JX        24          100.0
+                                GSR         1          100.0
+                                 IB         5          100.0
+                            L6MUX21         9          100.0
+                               LUT4       522          100.0
+                                 OB        11          100.0
+                              PFUMX        19          100.0
+SUB MODULES
+                          clock_ctr         1
+                          clock_dis         1
+                 clock_div_debounce         1
+                        clock_trans         1
+                              TOTAL       978
+----------------------------------------------------------------------
+Report for cell clock_dis.v1
+Instance Path : u4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8            7.3
+                            FD1P3AX         4           40.0
+                            FD1P3IX         6            3.6
+                            FD1S3AX         6           14.0
+                            FD1S3IX         6           15.0
+                            L6MUX21         9          100.0
+                               LUT4        79           15.1
+                              PFUMX        13           68.4
+                              TOTAL       131
+----------------------------------------------------------------------
+Report for cell clock_trans.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AY        12          100.0
+                            FD1S3IX         6           15.0
+                            FD1S3JX        24          100.0
+                               LUT4        36            6.9
+                              TOTAL        78
+----------------------------------------------------------------------
+Report for cell clock_div_debounce.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        85           77.3
+                            FD1P3AX         5           50.0
+                            FD1P3IX       144           85.7
+                            FD1S3IX         8           20.0
+                               LUT4        51            9.8
+                              TOTAL       293
+----------------------------------------------------------------------
+Report for cell clock_ctr.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17           15.5
+                            FD1P3AX         1           10.0
+                            FD1P3IX        18           10.7
+                            FD1S3AX        37           86.0
+                            FD1S3IX        20           50.0
+                               LUT4       334           64.0
+                              PFUMX         6           31.6
+                              TOTAL       433
