@@ -1,0 +1,93 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  321 of 4635 (6.926%)
+I/O cells:      25
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       125          100.0
+                            FD1P3AX        18          100.0
+                            FD1P3IX         8          100.0
+                            FD1P3JX         6          100.0
+                            FD1S3AX       103          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX       166          100.0
+                            FD1S3JX        19          100.0
+                                GSR         1          100.0
+                                 IB         9          100.0
+                            L6MUX21         3          100.0
+                               LUT4       714          100.0
+                                 OB        16          100.0
+                              PFUMX        60          100.0
+                          ROM128X1A         4          100.0
+SUB MODULES
+                        HC595driver         1
+                              Timer         1
+                           debounce         1
+                              music         1
+                     note_frequency         1
+                              TOTAL      1258
+----------------------------------------------------------------------
+Report for cell HC595driver.v1
+Instance Path : u5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         2           11.1
+                            FD1P3IX         2           25.0
+                            FD1S3AX         7            6.8
+                            L6MUX21         2           66.7
+                               LUT4        42            5.9
+                              PFUMX        10           16.7
+                              TOTAL        65
+----------------------------------------------------------------------
+Report for cell note_frequency.v1
+Instance Path : u1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        63           50.4
+                            FD1S3AX         7            6.8
+                            FD1S3IX       119           71.7
+                               LUT4       330           46.2
+                              PFUMX        11           18.3
+                              TOTAL       530
+----------------------------------------------------------------------
+Report for cell debounce.v1
+Instance Path : u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        15           12.0
+                            FD1P3AX        15           83.3
+                            FD1P3IX         1           12.5
+                            FD1P3JX         4           66.7
+                            FD1S3IX        26           15.7
+                               LUT4        49            6.9
+                              PFUMX         3            5.0
+                              TOTAL       113
+----------------------------------------------------------------------
+Report for cell Timer.v1
+Instance Path : u4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9            7.2
+                            FD1S3AX        21           20.4
+                            FD1S3IX        21           12.7
+                            FD1S3JX        18           94.7
+                               LUT4        96           13.4
+                              PFUMX         3            5.0
+                              TOTAL       168
+----------------------------------------------------------------------
+Report for cell music.v1
+Instance Path : u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        38           30.4
+                            FD1P3AX         1            5.6
+                            FD1P3IX         5           62.5
+                            FD1P3JX         2           33.3
+                            FD1S3AX        68           66.0
+                            FD1S3AY         1          100.0
+                            FD1S3JX         1            5.3
+                            L6MUX21         1           33.3
+                               LUT4       196           27.5
+                              PFUMX        33           55.0
+                          ROM128X1A         2           50.0
+                              TOTAL       348

@@ -1,0 +1,61 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     494.00        100.0
+                                  LUT4	     732.00        100.0
+                                 IOBUF	         25        100.0
+                                PFUREG	        321        100.0
+                                RIPPLE	        125        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        note_frequency	          1        45.8
+                                 music	          1        28.5
+                              debounce	          1         8.8
+                                 Timer	          1        11.7
+                           HC595driver	          1         4.3
+---------------------------------------------------
+Report for cell HC595driver
+   Instance path: main/u5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      21.00         4.3
+                                  LUT4	      42.00         5.7
+                                PFUREG	         11         3.4
+---------------------------------------------------
+Report for cell note_frequency
+   Instance path: main/u1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     226.33        45.8
+                                  LUT4	     331.00        45.2
+                                PFUREG	        126        39.3
+                                RIPPLE	         63        50.4
+---------------------------------------------------
+Report for cell debounce
+   Instance path: main/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      43.67         8.8
+                                  LUT4	      47.00         6.4
+                                PFUREG	         46        14.3
+                                RIPPLE	         15        12.0
+---------------------------------------------------
+Report for cell Timer
+   Instance path: main/u4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      57.67        11.7
+                                  LUT4	      96.00        13.1
+                                PFUREG	         60        18.7
+                                RIPPLE	          9         7.2
+---------------------------------------------------
+Report for cell music
+   Instance path: main/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     140.83        28.5
+                                  LUT4	     203.00        27.7
+                                PFUREG	         78        24.3
+                                RIPPLE	         38        30.4

@@ -1,0 +1,428 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+             Lattice Mapping Report File for Design Module 'main'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     exp5_2_impl1.ngd -o exp5_2_impl1_map.ncd -pr exp5_2_impl1.prf -mp
+     exp5_2_impl1.mrp -lpf //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/
+     exp5_2/impl1/exp5_2_impl1.lpf -lpf
+     //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp5_2/exp5_2.lpf -c 0
+     -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  05/21/19  19:19:28
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    321 out of  4635 (7%)
+      PFU registers:          321 out of  4320 (7%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       494 out of  2160 (23%)
+      SLICEs as Logic/ROM:    494 out of  2160 (23%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        125 out of  2160 (6%)
+   Number of LUT4s:        982 out of  4320 (23%)
+      Number used as logic LUTs:        732
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      250
+      Number used as shift registers:     0
+   Number of PIO sites used: 25 + 4(JTAG) out of 105 (28%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_use: 49 loads, 49 rising, 0 falling (Driver: u2/clk_use_52 )
+     Net clock_c: 160 loads, 160 rising, 0 falling (Driver: PIO clock )
+
+   Number of Clock Enables:  16
+     Net u5/driverProcess.step_cnt_0: 1 loads, 1 LSLICEs
+     Net u5/clk_use_enable_1: 1 loads, 1 LSLICEs
+     Net u5/clk_use_enable_4: 1 loads, 1 LSLICEs
+     Net u2/clock_c_enable_10: 3 loads, 3 LSLICEs
+     Net u2/clock_c_enable_2: 1 loads, 1 LSLICEs
+     Net u2/key_out_15__N_706: 2 loads, 2 LSLICEs
+     Net u2/key_out_15__N_729: 2 loads, 2 LSLICEs
+     Net u2/clk_cnt_17__N_784: 3 loads, 3 LSLICEs
+     Net outbut2: 1 loads, 1 LSLICEs
+     Net u2/key_out_15__N_734: 2 loads, 2 LSLICEs
+     Net u2/key_out_9: 1 loads, 1 LSLICEs
+     Net clock_c_enable_8: 2 loads, 2 LSLICEs
+     Net clock_c_enable_9: 1 loads, 1 LSLICEs
+     Net u3/clock_c_enable_11: 1 loads, 1 LSLICEs
+     Net u3/clock_c_enable_7: 1 loads, 1 LSLICEs
+     Net u3/clock_c_enable_6: 1 loads, 1 LSLICEs
+   Number of LSRs:  34
+     Net u5/n5193: 1 loads, 1 LSLICEs
+     Net u1/n4531: 9 loads, 9 LSLICEs
+     Net u1/n4605: 9 loads, 9 LSLICEs
+     Net u1/n4570: 9 loads, 9 LSLICEs
+     Net u1/n4551: 9 loads, 9 LSLICEs
+     Net u1/n4567: 9 loads, 9 LSLICEs
+     Net u1/n4496: 9 loads, 9 LSLICEs
+     Net u1/n4517: 9 loads, 9 LSLICEs
+     Net u2/n5189: 1 loads, 1 LSLICEs
+     Net u2/n5183: 6 loads, 6 LSLICEs
+     Net u2/n5188: 2 loads, 2 LSLICEs
+     Net u2/clk_cnt_17__N_784: 10 loads, 10 LSLICEs
+     Net u2/key_out_11: 4 loads, 4 LSLICEs
+     Net key_out_14: 2 loads, 2 LSLICEs
+     Net n10931: 1 loads, 1 LSLICEs
+     Net outbut3: 1 loads, 1 LSLICEs
+     Net u4/n10894: 1 loads, 1 LSLICEs
+     Net u4/n10860: 1 loads, 1 LSLICEs
+     Net u4/n10891: 2 loads, 2 LSLICEs
+     Net u4/n10862: 2 loads, 2 LSLICEs
+     Net u4/n10882: 1 loads, 1 LSLICEs
+     Net flag_music: 2 loads, 2 LSLICEs
+     Net u4/n3825: 1 loads, 1 LSLICEs
+     Net u4/n3815: 1 loads, 1 LSLICEs
+     Net u4/n714: 9 loads, 9 LSLICEs
+     Net u4/n10857: 1 loads, 1 LSLICEs
+     Net u4/n10853: 1 loads, 1 LSLICEs
+     Net u4/n3880: 1 loads, 1 LSLICEs
+     Net u4/n4280: 1 loads, 1 LSLICEs
+     Net u4/n10883: 1 loads, 1 LSLICEs
+     Net u4/n4276: 1 loads, 1 LSLICEs
+     Net u4/n3871: 1 loads, 1 LSLICEs
+     Net u4/n3863: 1 loads, 1 LSLICEs
+     Net u4/n3834: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net outbut2: 100 loads
+     Net flag_music: 54 loads
+
+     Net u3/n10920: 35 loads
+     Net u3/n53: 30 loads
+     Net u3/n3304: 28 loads
+     Net u3/n53_adj_1448: 28 loads
+     Net u3/outbut2_flag: 28 loads
+     Net u3/n707: 27 loads
+     Net u3/num_melody_6__N_907: 27 loads
+     Net u5/num_loc_0: 23 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| col[0]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| col[1]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| col[2]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| col[3]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clock               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| but3                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| but2                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| but1                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| but0                | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SER                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RCK                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| SCK                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led7                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led6                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| led5                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led4                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led3                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led2                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led1                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led0                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| buzzer              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal u3/num_melody_6__N_908 was merged into signal outbut3
+Signal u3/k_2__N_886 was merged into signal key_out_14
+Signal u3/n5 was merged into signal u3/buzzer_N_1187_0
+Signal key1_N_1278 was merged into signal u2/key_out_9
+Signal key3_N_1290 was merged into signal u2/key_out_11
+Signal GND_net undriven or does not drive anything - clipped.
+Signal u3/add_170_27/CO undriven or does not drive anything - clipped.
+Signal u3/add_172_1/S0 undriven or does not drive anything - clipped.
+Signal u3/add_172_1/CI undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_21/S1 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_21/S0 undriven or does not drive anything - clipped.
+Signal u3/add_172_27/CO undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_23/S1 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_23/S0 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_25/S1 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_25/S0 undriven or does not drive anything - clipped.
+Signal u3/add_170_1/S0 undriven or does not drive anything - clipped.
+Signal u3/add_170_1/CI undriven or does not drive anything - clipped.
+Signal u3/add_705_1/S0 undriven or does not drive anything - clipped.
+Signal u3/add_705_1/CI undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_0/S1 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_0/S0 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_0/CI undriven or does not drive anything - clipped.
+Signal u3/add_705_7/S1 undriven or does not drive anything - clipped.
+Signal u3/add_705_7/CO undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_27_7218/S1 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_27_7218/S0 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_27/S1 undriven or does not drive anything - clipped.
+Signal u3/buzzer_I_76_27/CO undriven or does not drive anything - clipped.
+
+Signal u4/clk_use_cnt_716_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u4/clk_use_cnt_716_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal u4/clk_use_cnt_716_add_4_17/CO undriven or does not drive anything -
+     clipped.
+Signal u2/clk_cnt_713_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal u2/clk_cnt_713_add_4_1/CI undriven or does not drive anything - clipped.
+Signal u2/clk_cnt_713_add_4_19/S1 undriven or does not drive anything - clipped.
+     
+Signal u2/clk_cnt_713_add_4_19/CO undriven or does not drive anything - clipped.
+     
+Signal u2/clk_use_cnt_714_715_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal u2/clk_use_cnt_714_715_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal u2/clk_use_cnt_714_715_add_4_9/S1 undriven or does not drive anything -
+     clipped.
+Signal u2/clk_use_cnt_714_715_add_4_9/CO undriven or does not drive anything -
+     clipped.
+Signal u1/add_7_17/CO undriven or does not drive anything - clipped.
+Signal u1/add_8_1/S0 undriven or does not drive anything - clipped.
+Signal u1/add_8_1/CI undriven or does not drive anything - clipped.
+Signal u1/add_4_17/CO undriven or does not drive anything - clipped.
+Signal u1/add_5_1/S0 undriven or does not drive anything - clipped.
+Signal u1/add_5_1/CI undriven or does not drive anything - clipped.
+Signal u1/add_8_17/CO undriven or does not drive anything - clipped.
+Signal u1/add_9_1/S0 undriven or does not drive anything - clipped.
+Signal u1/add_9_1/CI undriven or does not drive anything - clipped.
+Signal u1/add_5_17/CO undriven or does not drive anything - clipped.
+Signal u1/add_6_1/S0 undriven or does not drive anything - clipped.
+Signal u1/add_6_1/CI undriven or does not drive anything - clipped.
+Signal u1/add_9_17/CO undriven or does not drive anything - clipped.
+Signal u1/add_3_17/CO undriven or does not drive anything - clipped.
+Signal u1/add_6_17/CO undriven or does not drive anything - clipped.
+Signal u1/add_4_1/S0 undriven or does not drive anything - clipped.
+Signal u1/add_4_1/CI undriven or does not drive anything - clipped.
+Signal u1/add_3_1/S0 undriven or does not drive anything - clipped.
+Signal u1/add_3_1/CI undriven or does not drive anything - clipped.
+Signal u1/add_7_1/S0 undriven or does not drive anything - clipped.
+Signal u1/add_7_1/CI undriven or does not drive anything - clipped.
+Block u3/i1_1_lut_adj_106 was optimized away.
+Block u3/i1_1_lut was optimized away.
+Block u3/i5_1_lut was optimized away.
+Block u2/i5032_1_lut was optimized away.
+Block u2/i5025_1_lut was optimized away.
+Block i1 was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+
+
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 54 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
