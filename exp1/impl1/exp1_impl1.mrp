@@ -1,0 +1,402 @@
+
+             Lattice Mapping Report File for Design Module 'main'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     exp1_impl1.ngd -o exp1_impl1_map.ncd -pr exp1_impl1.prf -mp exp1_impl1.mrp
+     -lpf //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/impl1/exp1_i
+     mpl1.lpf -lpf
+     //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/exp1.lpf -c 0
+     -gui -msgset
+     //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  05/08/19  15:42:50
+
+Design Summary
+--------------
+
+   Number of registers:    307 out of  4635 (7%)
+      PFU registers:          307 out of  4320 (7%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       241 out of  2160 (11%)
+      SLICEs as Logic/ROM:    241 out of  2160 (11%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         94 out of  2160 (4%)
+   Number of LUT4s:        455 out of  4320 (11%)
+      Number used as logic LUTs:        267
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      188
+      Number used as shift registers:     0
+   Number of PIO sites used: 16 + 4(JTAG) out of 105 (19%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clock_c: 185 loads, 185 rising, 0 falling (Driver: PIO clock )
+
+                                    Page 1
+
+
+
+
+Design:  main                                          Date:  05/08/19  15:42:50
+
+Design Summary (cont)
+---------------------
+   Number of Clock Enables:  29
+     Net A4/clock_c_enable_123: 1 loads, 1 LSLICEs
+     Net A4/clock_c_enable_116: 1 loads, 1 LSLICEs
+     Net A4/RCK_N_788: 1 loads, 1 LSLICEs
+     Net A4/clock_c_enable_124: 1 loads, 1 LSLICEs
+     Net clock_c_enable_156: 9 loads, 9 LSLICEs
+     Net clock_c_enable_140: 9 loads, 9 LSLICEs
+     Net clock_c_enable_68: 9 loads, 9 LSLICEs
+     Net clock_c_enable_51: 9 loads, 9 LSLICEs
+     Net A2/clock_c_enable_31: 2 loads, 2 LSLICEs
+     Net A2/clock_c_enable_30: 2 loads, 2 LSLICEs
+     Net A2/clock_c_enable_70: 2 loads, 2 LSLICEs
+     Net A2/clock_c_enable_69: 2 loads, 2 LSLICEs
+     Net A2/clock_c_enable_41: 2 loads, 2 LSLICEs
+     Net outbut3: 1 loads, 1 LSLICEs
+     Net outbut0: 1 loads, 1 LSLICEs
+     Net A1/clock_c_enable_107: 9 loads, 9 LSLICEs
+     Net A1/clock_c_enable_2: 1 loads, 1 LSLICEs
+     Net A1/clock_c_enable_89: 9 loads, 9 LSLICEs
+     Net A1/clock_c_enable_5: 1 loads, 1 LSLICEs
+     Net A1/clock_c_enable_122: 9 loads, 9 LSLICEs
+     Net A1/clock_c_enable_7: 1 loads, 1 LSLICEs
+     Net A1/clock_c_enable_33: 9 loads, 9 LSLICEs
+     Net A1/col_cnt_15__N_191: 2 loads, 2 LSLICEs
+     Net A1/col_cnt_15__N_176: 2 loads, 2 LSLICEs
+     Net A1/key_out_15__N_361: 8 loads, 8 LSLICEs
+     Net A1/clock_c_enable_9: 1 loads, 1 LSLICEs
+     Net A1/col_cnt_15__N_181: 2 loads, 2 LSLICEs
+     Net A1/col_cnt_15__N_186: 2 loads, 2 LSLICEs
+     Net A1/clock_c_enable_160: 2 loads, 2 LSLICEs
+   Number of LSRs:  31
+     Net A4/n5025: 2 loads, 2 LSLICEs
+     Net A4/n359: 4 loads, 4 LSLICEs
+     Net outbut0_N_362: 18 loads, 18 LSLICEs
+     Net outbut3_N_377: 18 loads, 18 LSLICEs
+     Net outbut2_N_372: 18 loads, 18 LSLICEs
+     Net outbut1_N_367: 18 loads, 18 LSLICEs
+     Net A2/a_to_g3_3_N_394_2: 2 loads, 2 LSLICEs
+     Net minute0_1: 1 loads, 1 LSLICEs
+     Net A2/a_to_g2_3_N_390_2: 2 loads, 2 LSLICEs
+     Net minute1_1: 1 loads, 1 LSLICEs
+     Net second1_0: 2 loads, 2 LSLICEs
+     Net hour1_0: 2 loads, 2 LSLICEs
+     Net hour0_0: 2 loads, 2 LSLICEs
+     Net minute1_0: 1 loads, 1 LSLICEs
+     Net minute0_0: 2 loads, 2 LSLICEs
+     Net A2/a_to_g1_3_N_386_2: 2 loads, 2 LSLICEs
+     Net hour0_1: 1 loads, 1 LSLICEs
+     Net hour0_2: 1 loads, 1 LSLICEs
+     Net A2/n5056: 2 loads, 2 LSLICEs
+     Net hour1_1: 1 loads, 1 LSLICEs
+     Net A2/a_to_g4_3_N_398_2: 3 loads, 3 LSLICEs
+     Net second1_1: 1 loads, 1 LSLICEs
+     Net A2/outbut0_flag_N_650: 1 loads, 1 LSLICEs
+     Net second1_2: 1 loads, 1 LSLICEs
+     Net hour1_2: 1 loads, 1 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  main                                          Date:  05/08/19  15:42:50
+
+Design Summary (cont)
+---------------------
+     Net second0_3: 3 loads, 3 LSLICEs
+     Net minute1_2: 2 loads, 2 LSLICEs
+     Net minute0_2: 1 loads, 1 LSLICEs
+     Net A1/col_cnt_15__N_176: 9 loads, 9 LSLICEs
+     Net A1/n2161: 1 loads, 1 LSLICEs
+     Net A1/n2162: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net A4/initialize: 75 loads
+     Net outbut0_N_362: 22 loads
+     Net outbut1_N_367: 22 loads
+     Net outbut2_N_372: 22 loads
+     Net outbut3_N_377: 22 loads
+     Net A4/seg_num_0: 16 loads
+     Net A4/step2_1: 14 loads
+     Net A4/step2_2: 13 loads
+     Net A1/col_cnt_15__N_176: 11 loads
+     Net A4/seg_num_5: 10 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| row[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[0]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[1]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[2]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[3]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clock               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| but3                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| but2                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| but1                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 3
+
+
+
+
+Design:  main                                          Date:  05/08/19  15:42:50
+
+IO (PIO) Attributes (cont)
+--------------------------
+| but0                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SER                 | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RCK                 | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SCK                 | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i5 undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal A1/n1157 was merged into signal outbut2_N_372
+Signal A1/n1159 was merged into signal outbut1_N_367
+Signal A1/n1155 was merged into signal outbut3_N_377
+Signal clock_c_enable_113 was merged into signal outbut0
+Signal clock_c_enable_112 was merged into signal outbut3
+Signal A1/n1163 was merged into signal outbut0_N_362
+Signal n1603 was merged into signal hour1_2
+Signal n1598 was merged into signal minute0_2
+Signal n5071 was merged into signal second1_2
+Signal n1557 was merged into signal minute1_2
+Signal n2178 was merged into signal second0_3
+Signal n5045 was merged into signal hour0_2
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal A1/add_35_17/CO undriven or does not drive anything - clipped.
+Signal A1/add_39_1/S0 undriven or does not drive anything - clipped.
+Signal A1/add_39_1/CI undriven or does not drive anything - clipped.
+Signal A1/add_24_1/S0 undriven or does not drive anything - clipped.
+Signal A1/add_24_1/CI undriven or does not drive anything - clipped.
+Signal A1/add_54_17/CO undriven or does not drive anything - clipped.
+Signal A1/clk_cnt_502_503_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal A1/clk_cnt_502_503_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_11/S1 undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_11/S0 undriven or does not drive anything -
+     clipped.
+Signal A1/add_9_17/CO undriven or does not drive anything - clipped.
+Signal A1/add_20_1/S0 undriven or does not drive anything - clipped.
+Signal A1/add_20_1/CI undriven or does not drive anything - clipped.
+Signal A1/clk_cnt_502_503_add_4_17/CO undriven or does not drive anything -
+     clipped.
+Signal A1/add_5_17/CO undriven or does not drive anything - clipped.
+Signal A1/add_9_1/S0 undriven or does not drive anything - clipped.
+Signal A1/add_9_1/CI undriven or does not drive anything - clipped.
+
+                                    Page 4
+
+
+
+
+Design:  main                                          Date:  05/08/19  15:42:50
+
+Removed logic (cont)
+--------------------
+Signal A1/col_cnt_old_15__I_0_16/S0 undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_16/CO undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_13/S1 undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_13/S0 undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_15/S1 undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_15/S0 undriven or does not drive anything -
+     clipped.
+Signal A1/add_39_17/CO undriven or does not drive anything - clipped.
+Signal A1/add_24_17/CO undriven or does not drive anything - clipped.
+Signal A1/add_35_1/S0 undriven or does not drive anything - clipped.
+Signal A1/add_35_1/CI undriven or does not drive anything - clipped.
+Signal A1/add_50_1/S0 undriven or does not drive anything - clipped.
+Signal A1/add_50_1/CI undriven or does not drive anything - clipped.
+Signal A1/col_cnt_old_15__I_0_0/S1 undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_0/S0 undriven or does not drive anything -
+     clipped.
+Signal A1/col_cnt_old_15__I_0_0/CI undriven or does not drive anything -
+     clipped.
+Signal A1/add_50_17/CO undriven or does not drive anything - clipped.
+Signal A1/add_20_17/CO undriven or does not drive anything - clipped.
+Signal A1/add_54_1/S0 undriven or does not drive anything - clipped.
+Signal A1/add_54_1/CI undriven or does not drive anything - clipped.
+Signal A1/add_5_1/S0 undriven or does not drive anything - clipped.
+Signal A1/add_5_1/CI undriven or does not drive anything - clipped.
+Signal A4/step3_505_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal A4/step3_505_add_4_1/CI undriven or does not drive anything - clipped.
+Signal A4/step3_505_add_4_7/S1 undriven or does not drive anything - clipped.
+Signal A4/step3_505_add_4_7/CO undriven or does not drive anything - clipped.
+Signal A4/add_240_1/S0 undriven or does not drive anything - clipped.
+Signal A4/add_240_1/CI undriven or does not drive anything - clipped.
+Signal A4/add_240_7/S1 undriven or does not drive anything - clipped.
+Signal A4/add_240_7/CO undriven or does not drive anything - clipped.
+Block A1/i516_1_lut was optimized away.
+Block A1/i513_1_lut was optimized away.
+Block A1/i519_1_lut was optimized away.
+Block A1/i1557_1_lut was optimized away.
+Block A1/i1558_1_lut was optimized away.
+Block A1/i522_1_lut was optimized away.
+Block A2/i997_1_lut was optimized away.
+Block A2/i992_1_lut was optimized away.
+Block A2/i1021_1_lut_rep_88 was optimized away.
+Block A2/i954_1_lut was optimized away.
+Block A2/i1565_1_lut was optimized away.
+Block A2/i920_1_lut_rep_62 was optimized away.
+Block i1 was optimized away.
+
+Memory Usage
+------------
+
+
+
+                                    Page 5
+
+
+
+
+Design:  main                                          Date:  05/08/19  15:42:50
+
+Memory Usage (cont)
+-------------------
+     
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 52 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

@@ -1,0 +1,220 @@
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Wed May 08 15:42:39 2019
+
+
+Command Line:  synthesis -f exp1_impl1_lattice.synproj -gui -msgset //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = main.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/impl1 (searchpath added)
+-p //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1 (searchpath added)
+VHDL library = work
+VHDL design file = //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/impl1/source/a_to_g.vhd
+VHDL design file = //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/impl1/source/button_note.vhd
+VHDL design file = //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/impl1/source/fuyong.vhd
+VHDL design file = //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/impl1/source/main.vhd
+VHDL design file = //Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/impl1/source/xiaodou.vhd
+NGD file = exp1_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "//Mac/Home/Desktop/schoolwork/Lattice/Lattice2019/hw/exp1/impl1". VHDL-1504
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/a_to_g.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/a_to_g.vhd(4): analyzing entity a_to_g. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/a_to_g.vhd(14): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/button_note.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/button_note.vhd(3): analyzing entity button_note. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/button_note.vhd(13): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/fuyong.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/fuyong.vhd(4): analyzing entity fuyong. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/fuyong.vhd(12): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/main.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/main.vhd(4): analyzing entity main. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/main.vhd(13): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+Analyzing VHDL file //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/xiaodou.vhd. VHDL-1481
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/xiaodou.vhd(13): analyzing entity xiaodou. VHDL-1012
+INFO - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/xiaodou.vhd(28): analyzing architecture behavioral. VHDL-1010
+unit main is not yet analyzed. VHDL-1485
+unit main is not yet analyzed. VHDL-1485
+//mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/main.vhd(4): executing main(behavioral)
+
+WARNING - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/main.vhd(11): replacing existing netlist main(behavioral). VHDL-1205
+Top module name (VHDL): main
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = main.
+WARNING - synthesis: Bit 0 of Register \A3/seg is stuck at Zero
+WARNING - synthesis: Bit 8 of Register \A3/seg is stuck at Zero
+WARNING - synthesis: Bit 16 of Register \A3/seg is stuck at Zero
+WARNING - synthesis: Bit 24 of Register \A3/seg is stuck at Zero
+WARNING - synthesis: Bit 32 of Register \A3/seg is stuck at Zero
+WARNING - synthesis: Bit 40 of Register \A3/seg is stuck at Zero
+
+
+
+WARNING - synthesis: Bit 1 of Register \A2/a_to_g5 is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \A2/a_to_g5 is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \A3/seg_14 is stuck at One
+WARNING - synthesis: Bit 1 of Register \A3/seg_14 is stuck at One
+WARNING - synthesis: Bit 3 of Register \A3/seg_14 is stuck at One
+WARNING - synthesis: //mac/home/desktop/schoolwork/lattice/lattice2019/hw/exp1/impl1/source/button_note.vhd(194): Register \A2/a_to_g2_i3 is stuck at Zero. VDB-5013
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: Initial value found on instance \A4/initialize_74 will be ignored.
+WARNING - synthesis: Initial value found on instance \A2/a_to_g4_i2 will be ignored.
+WARNING - synthesis: Initial value found on instance \A2/a_to_g0_i2 will be ignored.
+WARNING - synthesis: Initial value found on instance \A2/a_to_g1_i2 will be ignored.
+WARNING - synthesis: Initial value found on instance \A2/a_to_g2_i2 will be ignored.
+WARNING - synthesis: Initial value found on instance \A2/a_to_g3_i2 will be ignored.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in main_drc.log.
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file exp1_impl1.ngd.
+
+################### Begin Area Report (main)######################
+Number of register bits => 307 of 4635 (6 % )
+CCU2D => 94
+FD1P3AX => 45
+FD1P3IX => 144
+FD1P3JX => 4
+FD1S3AX => 62
+FD1S3IX => 28
+FD1S3JX => 24
+GSR => 1
+IB => 9
+L6MUX21 => 9
+LUT4 => 278
+OB => 7
+PFUMX => 20
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clock_c, loads : 307
+Clock Enable Nets
+Number of Clock Enables: 29
+Top 10 highest fanout Clock Enables:
+  Net : A1/col_cnt_15__N_176, loads : 21
+  Net : A1/clock_c_enable_89, loads : 17
+  Net : A1/clock_c_enable_33, loads : 17
+  Net : A1/clock_c_enable_107, loads : 17
+  Net : A1/clock_c_enable_122, loads : 17
+  Net : A1/key_out_15__N_361, loads : 16
+  Net : A1/col_cnt_15__N_191, loads : 4
+  Net : A1/col_cnt_15__N_181, loads : 4
+  Net : A1/clock_c_enable_160, loads : 4
+  Net : A1/col_cnt_15__N_186, loads : 4
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : A4/initialize, loads : 75
+  Net : outbut0_N_362, loads : 22
+  Net : outbut1_N_367, loads : 22
+  Net : outbut2_N_372, loads : 22
+  Net : outbut3_N_377, loads : 22
+  Net : A1/col_cnt_15__N_176, loads : 21
+  Net : clock_c_enable_156, loads : 18
+  Net : clock_c_enable_140, loads : 18
+  Net : clock_c_enable_51, loads : 18
+  Net : clock_c_enable_68, loads : 18
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clock_c]                 |  200.000 MHz|   79.409 MHz|     9 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 82.957  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.563  secs
+--------------------------------------------------------------

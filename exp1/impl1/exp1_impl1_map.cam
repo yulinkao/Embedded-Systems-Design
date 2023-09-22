@@ -1,0 +1,82 @@
+[ START MERGED ]
+n5045 hour0_2
+n2178 second0_3
+clock_c_enable_112 outbut3
+clock_c_enable_113 outbut0
+n1557 minute1_2
+n5071 second1_2
+n1598 minute0_2
+n1603 hour1_2
+A1/n1159 outbut1_N_367
+A1/n1157 outbut2_N_372
+A1/n1163 outbut0_N_362
+A1/n1155 outbut3_N_377
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+A1/add_35_17/CO
+A1/add_39_1/S0
+A1/add_39_1/CI
+A1/add_24_1/S0
+A1/add_24_1/CI
+A1/add_54_17/CO
+A1/clk_cnt_502_503_add_4_1/S0
+A1/clk_cnt_502_503_add_4_1/CI
+A1/col_cnt_old_15__I_0_11/S1
+A1/col_cnt_old_15__I_0_11/S0
+A1/add_9_17/CO
+A1/add_20_1/S0
+A1/add_20_1/CI
+A1/clk_cnt_502_503_add_4_17/CO
+A1/add_5_17/CO
+A1/add_9_1/S0
+A1/add_9_1/CI
+A1/col_cnt_old_15__I_0_16/S0
+A1/col_cnt_old_15__I_0_16/CO
+A1/col_cnt_old_15__I_0_13/S1
+A1/col_cnt_old_15__I_0_13/S0
+A1/col_cnt_old_15__I_0_15/S1
+A1/col_cnt_old_15__I_0_15/S0
+A1/add_39_17/CO
+A1/add_24_17/CO
+A1/add_35_1/S0
+A1/add_35_1/CI
+A1/add_50_1/S0
+A1/add_50_1/CI
+A1/col_cnt_old_15__I_0_0/S1
+A1/col_cnt_old_15__I_0_0/S0
+A1/col_cnt_old_15__I_0_0/CI
+A1/add_50_17/CO
+A1/add_20_17/CO
+A1/add_54_1/S0
+A1/add_54_1/CI
+A1/add_5_1/S0
+A1/add_5_1/CI
+A4/step3_505_add_4_1/S0
+A4/step3_505_add_4_1/CI
+A4/step3_505_add_4_7/S1
+A4/step3_505_add_4_7/CO
+A4/add_240_1/S0
+A4/add_240_1/CI
+A4/add_240_7/S1
+A4/add_240_7/CO
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Wed May 08 15:42:51 2019
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "row[2]" SITE "N7" ;
+LOCATE COMP "col[0]" SITE "L3" ;
+LOCATE COMP "col[1]" SITE "N5" ;
+LOCATE COMP "col[2]" SITE "P6" ;
+LOCATE COMP "col[3]" SITE "N6" ;
+LOCATE COMP "SER" SITE "G3" ;
+LOCATE COMP "RCK" SITE "H3" ;
+LOCATE COMP "SCK" SITE "J2" ;
+LOCATE COMP "row[0]" SITE "N8" ;
+LOCATE COMP "row[1]" SITE "P8" ;
+LOCATE COMP "row[3]" SITE "P7" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

@@ -1,0 +1,76 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  307 of 4635 (6.624%)
+I/O cells:      16
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        94          100.0
+                            FD1P3AX        45          100.0
+                            FD1P3IX       144          100.0
+                            FD1P3JX         4          100.0
+                            FD1S3AX        62          100.0
+                            FD1S3IX        28          100.0
+                            FD1S3JX        24          100.0
+                                GSR         1          100.0
+                                 IB         9          100.0
+                            L6MUX21         9          100.0
+                               LUT4       278          100.0
+                                 OB         7          100.0
+                              PFUMX        20          100.0
+SUB MODULES
+                             a_to_g         1
+                        button_note         1
+                             fuyong         1
+                            xiaodou         1
+                              TOTAL       729
+----------------------------------------------------------------------
+Report for cell fuyong.v1
+Instance Path : A4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8            8.5
+                            FD1P3AX         4            8.9
+                            FD1P3IX         1            0.7
+                            FD1S3AX        11           17.7
+                            FD1S3IX         6           21.4
+                            FD1S3JX         1            4.2
+                            L6MUX21         9          100.0
+                               LUT4        93           33.5
+                              PFUMX        16           80.0
+                              TOTAL       149
+----------------------------------------------------------------------
+Report for cell button_note.v1
+Instance Path : A2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         5           11.1
+                            FD1P3IX         7            4.9
+                            FD1S3AX        20           32.3
+                            FD1S3JX         5           20.8
+                               LUT4        67           24.1
+                              PFUMX         1            5.0
+                              TOTAL       105
+----------------------------------------------------------------------
+Report for cell xiaodou.v1
+Instance Path : A1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        86           91.5
+                            FD1P3AX        36           80.0
+                            FD1P3IX       136           94.4
+                            FD1P3JX         4          100.0
+                            FD1S3AX        16           25.8
+                            FD1S3IX        17           60.7
+                               LUT4        79           28.4
+                              PFUMX         3           15.0
+                              TOTAL       377
+----------------------------------------------------------------------
+Report for cell a_to_g.v1
+Instance Path : A3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        15           24.2
+                            FD1S3IX         5           17.9
+                            FD1S3JX        18           75.0
+                               LUT4        34           12.2
+                              TOTAL        72

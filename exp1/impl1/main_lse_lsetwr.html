@@ -1,0 +1,272 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed May 08 15:42:42 2019
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     main
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clock_c]
+            732 items scored, 732 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 7.593ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             \A4/initialize_74  (from clock_c +)
+   Destination:    FD1S3AX    D              \A4/seg_num_i5  (to clock_c +)
+
+   Delay:                  12.433ns  (33.4% logic, 66.6% route), 9 logic levels.
+
+ Constraint Details:
+
+     12.433ns data_path \A4/initialize_74 to \A4/seg_num_i5 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 7.593ns
+
+ Path Details: \A4/initialize_74 to \A4/seg_num_i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \A4/initialize_74 (from clock_c)
+Route        75   e 2.333                                  \A4/initialize
+LUT4        ---     0.493              B to Z              \A4/i2498_2_lut_rep_59
+Route         5   e 1.405                                  \A4/n5042
+LUT4        ---     0.493              C to Z              \A4/i2_3_lut_4_lut
+Route         2   e 1.141                                  \A4/n4652
+LUT4        ---     0.493              B to Z              \A4/i5_4_lut
+Route         1   e 0.941                                  \A4/n12
+LUT4        ---     0.493              D to Z              \A4/i4179_4_lut_4_lut
+Route         6   e 1.457                                  \A4/n1712
+A1_TO_FCO   ---     0.827           D[2] to COUT           \A4/add_240_1
+Route         1   e 0.020                                  \A4/n4196
+FCI_TO_FCO  ---     0.157            CIN to COUT           \A4/add_240_3
+Route         1   e 0.020                                  \A4/n4197
+FCI_TO_FCO  ---     0.157            CIN to COUT           \A4/add_240_5
+Route         1   e 0.020                                  \A4/n4198
+FCI_TO_F    ---     0.598            CIN to S[2]           \A4/add_240_7
+Route         1   e 0.941                                  \A4/seg_num_5__N_700[5]
+                  --------
+                   12.433  (33.4% logic, 66.6% route), 9 logic levels.
+
+
+Error:  The following path violates requirements by 7.416ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             \A4/initialize_74  (from clock_c +)
+   Destination:    FD1S3AX    D              \A4/seg_num_i3  (to clock_c +)
+
+   Delay:                  12.256ns  (32.6% logic, 67.4% route), 8 logic levels.
+
+ Constraint Details:
+
+     12.256ns data_path \A4/initialize_74 to \A4/seg_num_i3 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 7.416ns
+
+ Path Details: \A4/initialize_74 to \A4/seg_num_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \A4/initialize_74 (from clock_c)
+Route        75   e 2.333                                  \A4/initialize
+LUT4        ---     0.493              B to Z              \A4/i2498_2_lut_rep_59
+Route         5   e 1.405                                  \A4/n5042
+LUT4        ---     0.493              C to Z              \A4/i2_3_lut_4_lut
+Route         2   e 1.141                                  \A4/n4652
+LUT4        ---     0.493              B to Z              \A4/i5_4_lut
+Route         1   e 0.941                                  \A4/n12
+LUT4        ---     0.493              D to Z              \A4/i4179_4_lut_4_lut
+Route         6   e 1.457                                  \A4/n1712
+A1_TO_FCO   ---     0.827           D[2] to COUT           \A4/add_240_1
+Route         1   e 0.020                                  \A4/n4196
+FCI_TO_FCO  ---     0.157            CIN to COUT           \A4/add_240_3
+Route         1   e 0.020                                  \A4/n4197
+FCI_TO_F    ---     0.598            CIN to S[2]           \A4/add_240_5
+Route         1   e 0.941                                  \A4/seg_num_5__N_700[3]
+                  --------
+                   12.256  (32.6% logic, 67.4% route), 8 logic levels.
+
+
+Error:  The following path violates requirements by 7.416ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             \A4/initialize_74  (from clock_c +)
+   Destination:    FD1S3AX    D              \A4/seg_num_i4  (to clock_c +)
+
+   Delay:                  12.256ns  (32.6% logic, 67.4% route), 8 logic levels.
+
+ Constraint Details:
+
+     12.256ns data_path \A4/initialize_74 to \A4/seg_num_i4 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 7.416ns
+
+ Path Details: \A4/initialize_74 to \A4/seg_num_i4
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \A4/initialize_74 (from clock_c)
+Route        75   e 2.333                                  \A4/initialize
+LUT4        ---     0.493              B to Z              \A4/i2498_2_lut_rep_59
+Route         5   e 1.405                                  \A4/n5042
+LUT4        ---     0.493              C to Z              \A4/i2_3_lut_4_lut
+Route         2   e 1.141                                  \A4/n4652
+LUT4        ---     0.493              B to Z              \A4/i5_4_lut
+Route         1   e 0.941                                  \A4/n12
+LUT4        ---     0.493              D to Z              \A4/i4179_4_lut_4_lut
+Route         6   e 1.457                                  \A4/n1712
+A1_TO_FCO   ---     0.827           D[2] to COUT           \A4/add_240_1
+Route         1   e 0.020                                  \A4/n4196
+FCI_TO_FCO  ---     0.157            CIN to COUT           \A4/add_240_3
+Route         1   e 0.020                                  \A4/n4197
+FCI_TO_F    ---     0.598            CIN to S[2]           \A4/add_240_5
+Route         1   e 0.941                                  \A4/seg_num_5__N_700[4]
+                  --------
+                   12.256  (32.6% logic, 67.4% route), 8 logic levels.
+
+Warning: 12.593 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clock_c]                 |     5.000 ns|    12.593 ns|     9 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\A4/n12                                 |       1|     222|     30.33%
+                                        |        |        |
+\A4/n1712                               |       6|     222|     30.33%
+                                        |        |        |
+\A1/n10_adj_811                         |       3|     128|     17.49%
+                                        |        |        |
+\A1/n42                                 |       1|     128|     17.49%
+                                        |        |        |
+\A4/n4197                               |       1|     126|     17.21%
+                                        |        |        |
+\A4/initialize                          |      75|     112|     15.30%
+                                        |        |        |
+\A1/n16                                 |       1|      88|     12.02%
+                                        |        |        |
+\A1/n4666                               |       1|      88|     12.02%
+                                        |        |        |
+\A4/n4652                               |       2|      87|     11.89%
+                                        |        |        |
+\A2/n6                                  |       2|      86|     11.75%
+                                        |        |        |
+\A2/n4379                               |       1|      86|     11.75%
+                                        |        |        |
+\A1/n1975                               |       2|      75|     10.25%
+                                        |        |        |
+\A1/n4632                               |       2|      75|     10.25%
+                                        |        |        |
+\A1/n4697                               |       2|      75|     10.25%
+                                        |        |        |
+\A4/n1499                               |       1|      74|     10.11%
+                                        |        |        |
+\A4/n2416                               |       1|      74|     10.11%
+                                        |        |        |
+\A4/seg_num_5__N_700[5]                 |       1|      74|     10.11%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 732  Score: 3919876
+
+Constraints cover  5952 paths, 852 nets, and 2067 connections (91.9% coverage)
+
+
+Peak memory: 86986752 bytes, TRCE: 2822144 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
